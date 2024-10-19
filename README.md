@@ -30,17 +30,6 @@
 
 <br />
 
-### 2. **온라인 쇼핑몰 백엔드 프로젝트**
-- **설명**: 이 프로젝트는 온라인 쇼핑몰의 백엔드 시스템으로, 상품 목록 관리, 주문 처리, 사용자 인증과 같은 핵심 기능을 제공합니다. Spring Security를 사용한 인증 및 인가 기능을 포함하며, MySQL 데이터베이스를 사용하여 데이터를 관리합니다.
-- **기술 스택**: Java, Spring Boot, Spring Security, MySQL, JPA, REST API, GitHub
-
-|쇼핑몰 백엔드 시스템 다이어그램|
-|:---:|
-|<img src="https://github.com/user-attachments/assets/shopping-backend-diagram.png" width="450"/>|
-|쇼핑몰 백엔드 시스템 다이어그램.|
-
-<br />
-
 ## ⚙ 기술 스택
 
 ### Backend
@@ -59,7 +48,6 @@
 ### Tools
 <div>
   <img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/Github.png?raw=true" width="80">
-  <img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/IntelliJ.png?raw=true" width="80">
 </div>
 
 <br />
