@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입 페이지</title>
+
+    <link rel="stylesheet" href="/css/join.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="login-wrapper">
+        <img src="/img/logo.png" alt="Logo" class="logo" onclick="location.href='/'">
+        <h2>Join</h2>
+        <form method="post" action="#" id="join-form">
+            <input type="text" name="userName" placeholder="Username" id="name">
+            <input type="email" name="userEmail" placeholder="Email" id="email">
+            <input type="password" name="userPassword" placeholder="Password" id="pwd">
+            <input type="password" name="confirmPassword" placeholder="Confirm Password" id="pwdChk">
+            <label for="agree-terms">
+                <input type="checkbox" id="agree-terms"> 이용 약관에 동의합니다
+            </label>
+            <input type="submit" value="Join" id="btn_save">
+        </form>
+    </div>
+
+    <script src="/js/join.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Farm DB</title>
+
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/index.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+</head>
+<body style="box-sizing: border-box; padding: 0; margin: 0;">
+    <div th:replace="~{layout/header :: header}"></div>
+
+    <section>
+        <div id="section_div1">
+            <div id="section_div1_div1">
+                <img src="/img/solar_panel.png" alt="태양광 패널">
+            </div>
+            <div id="section_div1_div2">
+                <p>
+                    스마트팜을 위한 혁신적인 관리 시스템을 소개합니다.<br>
+                    본 시스템은 최신 기술을 활용하여 농업 환경에서의 효율성과 생산성을 극대화하기 위해 설계되었습니다.<br>
+                    사용자 친화적인 인터페이스와 강력한 기능을 통해, 농부들과 농업 관련 사업자들이 작물 관리를 더욱 쉽고<br> 효과적으로 할 수 있게 돕습니다.
+                </p>
+            </div>
+        </div>
+        <div id="section_div2">
+            <div id="notices">
+                <h2>공지사항</h2>
+                <ul>
+                    <li th:each="notice : ${recentNotices}">
+                        <a th:href="@{/notice-detail/{id}(id=${notice.noticeId})}" th:text="${notice.title}">스마트팜 관리 시스템 업데이트 안내</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="inquiries">
+                <h2>문의사항</h2>
+                <ul>
+                    <li th:each="inquiry : ${recentInquiries}">
+                        <a th:href="@{/inquiry-detail/{id}(id=${inquiry.inquiryId})}" th:text="${inquiry.title}">센서 연동 문제 해결 방법</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div th:replace="~{layout/footer :: footer}"></div>
+</body>
+</html>

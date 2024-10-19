@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>문의사항 작성</title>
+
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/write_inquiry.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body style="box-sizing: border-box; padding: 0; margin: 0;">
+    <div th:replace="~{layout/header :: header}"></div>
+
+    <section class="form-container">
+        <form id="inquiry-form" action="#" method="post">
+            <h2>문의사항 작성</h2>
+            <div class="form-group">
+                <label for="inquiry-title">제목:</label>
+                <input type="text" id="inquiry-title" name="inquiry_title" placeholder="제목을 입력하세요" required>
+            </div>
+            <div class="form-group">
+                <label for="inquiry-content">내용:</label>
+                <textarea id="inquiry-content" name="inquiry_content" placeholder="내용을 입력하세요" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit_btn">작성하기</button>
+            </div>
+        </form>
+    </section>
+
+    <div th:replace="~{layout/footer :: footer}"></div>
+    <script src="/js/write_inquiry.js"></script>
+</body>
+</html>

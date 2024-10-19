@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/write_cropList.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body style="box-sizing: border-box; padding: 0; margin: 0;">
+    <div th:replace="~{layout/header :: header}"></div>
+
+    <section class="form-container">
+        <form id="crop-environment-form" action="#" method="post">
+            <h2>작물 재배 환경 작성</h2>
+            <div class="form-group">
+                <label for="crop-name">작물 이름:</label>
+                <input type="text" id="crop-name" name="crop_name" placeholder="토마토" required>
+            </div>
+            <div class="form-group">
+                <label for="sunlight">필요한 햇빛:</label>
+                <input type="text" id="sunlight" name="env_sun" placeholder="하루 6~8시간" required>
+            </div>
+            <div class="form-group">
+                <label for="water">필요한 물의 양:</label>
+                <input type="text" id="water" name="env_water" placeholder="주 1회" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit_btn">작성하기</button>
+            </div>
+        </form>
+    </section>
+
+    <div th:replace="~{layout/footer :: footer}"></div>
+    <script src="/js/write_cropList.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+body {
+    font-family: "Gamja Flower", sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.detail-container {
+    width: 60%;
+    min-height: 90vh;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-header, .detail-content, .detail-footer {
+    margin-bottom: 20px;
+}
+
+.detail-header h2, .detail-header p, .detail-content p {
+    margin-bottom: 15px;
+}
+
+.detail-header h2 {
+    font-size: 2.0rem;
+    text-align: center;
+}
+
+.detail-header p, #view-count {
+    font-size: 1.0rem;
+    text-align: right;
+    color: #888;
+}
+
+.detail-content {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    height: auto;
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+.detail-footer {
+    display: flex;
+    justify-content: center;
+}
+
+#back-btn {
+    padding: 10px 20px;
+    background-color: #4A4A4A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#back-btn:hover {
+    background-color: #AD8B73;
+}
+#delete-btn {
+    padding: 10px 20px;
+    background-color: #D9534F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#delete-btn:hover {
+    background-color: #C9302C;
+}

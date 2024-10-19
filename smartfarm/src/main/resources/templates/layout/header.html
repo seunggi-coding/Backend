@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="/css/header.css">
+</head>
+<body>
+    <div th:fragment="header">
+
+        <header>
+            <div>
+                <img src="/img/logo.png" alt="logo img" onclick="location.href='/'">
+            </div>
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="/croplist">작물 재배환경 조회</a></li>
+                        <li><a href="/inquiry">문의사항</a></li>
+                        <li><a href="/notice">공지사항</a></li>
+                    </ul>
+                    <ul th:if="${userPrincipal == null}">
+                        <li><a href="/auth/login">로그인</a></li>
+                        <li><a href="/auth/join">회원가입</a></li>
+                    </ul>
+                    <ul th:unless="${userPrincipal == null}">
+                        <li><a href="/setUser">마이페이지</a></li>
+                        <li><a href="/auth/logout">로그아웃</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+    </div>
+</body>
+</html>

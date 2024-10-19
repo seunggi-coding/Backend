@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>문의사항 작성</title>
+
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/detail_inquiry.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body style="box-sizing: border-box; padding: 0; margin: 0;">
+    <div th:replace="~{layout/header :: header}"></div>
+
+    <section class="detail-container">
+        <div class="detail-header">
+            <input type="hidden" id="inquiry-id" th:value="${inquiry.inquiryId}"/>
+            <h2 id="inquiry-title" th:text="${inquiry.title}">문의사항 제목</h2>
+            <p id="inquiry-date" th:text="'작성일: ' + ${inquiry.creationDate}">작성일: 2024-04-12</p>
+            <p id="inquiry-author" th:text="'작성자: ' + ${inquiry.user.name}">작성자: 홍길동</p>
+            <p id="view-count" th:text="'조회수: ' + ${inquiry.viewCount}">조회수: 0</p>
+        </div>
+        <div class="detail-content">
+            <p id="inquiry-content" th:text="${inquiry.content}">문의사항의 상세 내용이 여기에 표시됩니다. 사용자가 입력한 문의 내용이 상세하게 보여질 것입니다.</p>
+        </div>
+        <div class="detail-footer">
+            <button type="button" id="edit-btn" th:onclick="'location.href=\'/inquiry/edit/' + ${inquiry.inquiryId} + '\''">게시글 수정</button>
+            <button type="button" id="back-btn" onclick="location.href='/inquiry'">목록으로</button>
+            <button type="button" id="delete-btn" th:if="${inquiry.user.name == userPrincipal.getLoginName()}">게시글 삭제</button>
+        </div>
+        <div class="comment-section">
+            <textarea id="comment-box" placeholder="관리자만 댓글 작성이 가능합니다." th:if="${userPrincipal.isAdmin}"></textarea>
+            <button type="button" id="submit-comment" th:if="${userPrincipal.isAdmin}">댓글 작성</button>
+        </div>
+        <div class="comment-list">
+            <div class="comment" th:each="comment : ${comments}">
+                <p class="comment-author" th:text="'작성자: ' + ${comment.writer}">작성자: 관리자</p>
+                <p class="comment-content" th:text="${comment.content}">댓글 내용 예시입니다. 실제로는 여기에 사용자가 입력한 댓글 내용이 보여집니다.</p>
+                <p class="comment-date" th:text="${comment.creationDate}">2024-04-12</p>
+            </div>
+        </div>
+    </section>
+
+    <div th:replace="~{layout/footer :: footer}"></div>
+    <script src="/js/detail_inquiry.js"></script>
+</body>
+</html>

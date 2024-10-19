@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+body{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FFFBE9;
+}
+.logo {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.logo:hover {
+    cursor: pointer;
+}
+
+.login-wrapper{
+    position: relative;
+    width: 400px;
+    height: auto;
+    padding: 40px;
+    box-sizing: border-box;
+    border: 2px solid #AD8B73;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+}
+
+.login-wrapper > h2{
+    font-size: 24px;
+    color: #AD8B73;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+#edit-form > input, #edit-form > label{
+    width: 100%;
+    margin-bottom: 16px;
+}
+#edit-form > input{
+    height: 48px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    background-color: #F8F8F8;
+}
+#edit-form > input::placeholder{
+    color: #c0c0c0d0;
+}
+#edit-form > input[type="submit"]{
+    color: #fff;
+    font-size: 16px;
+    background-color: #AD8B73;
+    margin-top: 20px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>문의사항 작성</title>
+
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/detail_notice.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body style="box-sizing: border-box; padding: 0; margin: 0;">
+    <div th:replace="~{layout/header :: header}"></div>
+
+    <section class="detail-container">
+        <div class="detail-header">
+            <input type="hidden" id="notice-id" th:value="${notice.noticeId}"/>
+            <h2 id="notice-title" th:text="${notice.title}">공지사항 제목</h2>
+            <p id="notice-date" th:text="'작성일: ' + ${notice.creationDate}">작성일: 2024-04-12</p>
+            <p id="notice-author" th:text="'작성자: ' + ${notice.user.name}">작성자: 홍길동</p>
+            <p id="view-count" th:text="'조회수: ' + ${notice.viewCount}">조회수: 0</p>
+        </div>
+        <div class="detail-content">
+            <p id="notice-content" th:text="${notice.content}">공지사항의 상세 내용이 여기에 표시됩니다. 사용자가 입력한 공지 내용이 상세하게 보여질 것입니다.</p>
+        </div>
+        <div class="detail-footer">
+            <button type="button" id="back-btn" onclick="location.href='/notice'">목록으로</button>
+            <button type="button" th:if="${userPrincipal.isAdmin}" id="delete-btn">게시글 삭제</button>
+        </div>
+    </section>
+
+    <div th:replace="~{layout/footer :: footer}"></div>
+    <script src="/js/detail_notice.js"></script>
+</body>
+</html>
