@@ -17,20 +17,20 @@
 
 ## 기능 설명 및 화면 구성
 
-### 1. 회원가입
+### 1. 메인 페이지
+- 로그인 후 메인 페이지로 이동하여 도서 목록 및 기타 기능을 사용할 수 있는 인터페이스를 제공합니다.
+
+  ![main](https://github.com/user-attachments/assets/173b0637-fba1-43d7-9e58-474e83da55f5)
+
+### 2. 회원가입
 - 새로운 사용자를 등록할 수 있는 기능입니다. 회원 정보는 MongoDB에 저장되며, 각 회원의 정보를 관리할 수 있습니다.
 
   ![join](https://github.com/user-attachments/assets/8c770dee-0cd5-49a7-a727-955f980614bb)
 
-### 2. 로그인
+### 3. 로그인
 - 등록된 사용자는 로그인 기능을 통해 도서관 시스템에 접속할 수 있습니다. 로그인된 사용자는 도서 목록과 상세 정보를 조회할 수 있습니다.
 
   ![login](https://github.com/user-attachments/assets/29dd2719-0c50-407f-8e38-1def80c472b6)
-
-### 3. 메인 페이지
-- 로그인 후 메인 페이지로 이동하여 도서 목록 및 기타 기능을 사용할 수 있는 인터페이스를 제공합니다.
-
-  ![main](https://github.com/user-attachments/assets/173b0637-fba1-43d7-9e58-474e83da55f5)
 
 ### 4. 도서 목록 보기
 - 등록된 도서들의 목록을 확인할 수 있으며, 각 도서의 정보는 MongoDB에서 불러옵니다.
