@@ -25,7 +25,7 @@
 
 |회원 관리 시스템 메인 페이지|
 |:---:|
-|<img src="https://github.com/user-attachments/assets/07c6f87c-6b1a-465a-953e-569165a195f9" width="450"/>|
+|<img src="https://github.com/user-attachments/assets/07c6f87c-6b1a-465a-953e-569165a195f9" width="1000"/>|
 |회원 관리 시스템 메인 페이지.|
 
 <br />
@@ -38,10 +38,6 @@
   <img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/SpringBoot.png?raw=true" width="80">
   <img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/Mysql.png?raw=true" width="80">
   <img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/SpringDataJPA.png?raw=true" width="80">
-  <img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/SpringSecurity.png?raw=true" width="80">
-  <img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/jQuery.png?raw=true" width="80">
-  <img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/NodeJS.png?raw=true" width="80">
-  <img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/MongoDB.png?raw=true" width="80">
   <img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/JavaScript.png?raw=true" width="80">
 </div>
 
