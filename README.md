@@ -41,6 +41,17 @@
 
 <br />
 
+### 3. **SmartFarm 관리 시스템**
+- **설명**: SmartFarm 관리 시스템은 회원가입, 로그인, 작물 정보 조회, 문의 게시판, 공지사항 등의 다양한 기능을 제공하며, 회원과 관리자 기능이 분리된 백엔드 시스템입니다. Spring Boot와 MySQL을 사용하여 구축되었습니다.
+- **기술 스택**: Java, Spring Boot, MySQL, JPA, Spring Security, IntelliJ IDEA, GitHub
+
+|SmartFarm 관리 시스템 메인 페이지|
+|:---:|
+|<img src="https://github.com/user-attachments/assets/990504a9-5bf6-4327-8c28-3c53dd547016" width="1000"/>|
+|SmartFarm 관리 시스템 메인 페이지.|
+
+<br />
+
 ## ⚙ 기술 스택
 
 ### Backend
