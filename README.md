@@ -30,6 +30,17 @@
 
 <br />
 
+### 2. **도서관 관리 시스템 프로젝트**
+- **설명**: 도서관에서 회원 관리를 위한 시스템으로, 사용자 회원가입, 로그인, 도서 목록 조회 등의 기능을 제공하며, REST API를 통해 클라이언트와 데이터를 주고받습니다. Spring Boot와 MySQL을 기반으로 구축된 백엔드 시스템입니다.
+- **기술 스택**: Java, Spring Boot, MySQL, JPA, GitHub
+
+|도서관 시스템 메인 페이지|
+|:---:|
+|<img src="https://github.com/user-attachments/assets/main-page.png" width="1000"/>|
+|도서관 관리 시스템 메인 페이지.|
+
+<br />
+
 ## ⚙ 기술 스택
 
 ### Backend
