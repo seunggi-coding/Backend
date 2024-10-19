@@ -62,6 +62,16 @@
 
 <br>
 
+## 시스템 아키텍처 다이어그램
+
+SmartFarm 관리 시스템의 전체 아키텍처는 아래 다이어그램과 같습니다.
+
+  ![고급웹프로그래밍_HW2](https://github.com/user-attachments/assets/f46de54b-4700-4e14-b592-1d6ba938be1a)
+
+---
+
+<br>
+
 ## 사용 기술 스택
 
 ### Backend
