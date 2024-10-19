@@ -21,7 +21,7 @@
 
 ### 1. **회원 관리 시스템 프로젝트**
 - **설명**: 회원 정보를 관리하기 위한 백엔드 시스템으로, 사용자 등록, 수정, 삭제 등의 기능을 제공하며, REST API 구조를 사용하여 클라이언트와 데이터를 주고받을 수 있습니다. Spring Boot와 MySQL을 사용하여 구축되었습니다.
-- **기술 스택**: Java, Spring Boot, MySQL, JPA, GitHub
+- **기술 스택**: JavaScript, VScode, MongoDB, NodeJs, GitHub
 
 |회원 관리 시스템 메인 페이지|
 |:---:|
