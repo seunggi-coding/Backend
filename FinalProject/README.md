@@ -43,7 +43,7 @@
   </tr>
   <tr>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/main-page.png" width="1000"/>
+      <img src="https://github.com/user-attachments/assets/07c6f87c-6b1a-465a-953e-569165a195f9" width="1000"/>
     </td>
   </tr>
 </table>
@@ -57,7 +57,7 @@
   </tr>
   <tr>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/register-page.png" width="1000"/>
+      <img src="https://github.com/user-attachments/assets/4e026293-100e-4c39-acc4-2bdf092dbc96" width="1000"/>
     </td>
   </tr>
 </table>
@@ -71,7 +71,7 @@
   </tr>
   <tr>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/rental-list-page.png" width="1000"/>
+      <img src="https://github.com/user-attachments/assets/abdcc2e3-2074-4d71-a981-35bcd3e3fac9" width="1000"/>
     </td>
   </tr>
 </table>
@@ -85,7 +85,21 @@
   </tr>
   <tr>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/rental-amount-page.png" width="1000"/>
+      <img src="https://github.com/user-attachments/assets/2a0edad9-73ab-4e81-9a86-19a18143fd81" width="1000"/>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+### 고객 목록 페이지
+<table>
+  <tr>
+    <td>고객 목록 페이지</td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/dd899d3e-7bcb-4c2c-91f1-5bea8c95cd8c" width="1000"/>
     </td>
   </tr>
 </table>
