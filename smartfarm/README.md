@@ -42,7 +42,7 @@
   ![list_add](https://github.com/user-attachments/assets/e621d139-6e5b-498e-b868-6d0c99fd9b23)
 
 ### 5. 문의 게시판
-- 사용자는 문의 게시판을 통해 질문을 올리거나 다른 사용자의 질문에 답변을 남길 수 있습니다.
+- 사용자는 문의 게시판을 통해 질문을 올려 관리자에게 답변을 받을 수 있습니다.
 
   ![qna](https://github.com/user-attachments/assets/b77273d3-fb27-47fc-acbc-96d3c44b23bf)
   ![qna_add](https://github.com/user-attachments/assets/afd181d6-1fdc-4216-b814-190d07782853)
@@ -54,7 +54,7 @@
   ![notice_add](https://github.com/user-attachments/assets/49da3f13-50e9-4e74-a341-1ce82e731c1c)
 
 ### 7. 회원 정보 수정
-- 사용자는 자신의 회원 정보를 수정할 수 있습니다. 또한, 관리자는 모든 회원 정보를 수정할 수 있는 권한을 가집니다.
+- 사용자는 자신의 회원 정보를 수정할 수 있습니다.
 
   ![mypage](https://github.com/user-attachments/assets/a4663615-1c7f-4c19-ae4f-9b2f02e2f995)
 
