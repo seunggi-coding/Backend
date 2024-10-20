@@ -69,7 +69,10 @@
 ### Tools
 <div>
   <img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/Github.png?raw=true" width="80">
+  <img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/IntelliJIDEA.png?raw=true" width="80">
 </div>
+
+<br />
 
 
 <br />
